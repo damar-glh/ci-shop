@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.115.4">
-    <title>Orders Detail - Codeigniter E-commerce</title>
+    <title>Orders Confirm - Codeigniter E-commerce</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-fixed/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
@@ -145,44 +145,38 @@
         <div class="col-md-9">
             <div class="card text-decoration-none">
                 <div class="card-header">
-                    Detail Orders #01236123265
+                    Konfirmasi Orders #01236123265
                     <div class="float-end">
                         <span class="badge rounded-pill text-bg-info">Menunggu Pembayaran</span>
                     </div>
                 </div>
+                <form action="">
                 <div class="card-body">
-                    <p>Nama : Nama Penerima</p>
-                    <p>Telepon : 082223223166</p>
-                    <p>Alamat : Jl. sesama, No. 123</p>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Product</th>
-                                <th class="text-center">Harga</th>
-                                <th class="text-center">Jumlah</th>
-                                <th class="text-center">Subtotal</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              <p><img src="https://placehold.co/50x50" alt=""><strong> Produk Title</strong></p>
-                            </td>
-                            <td class="text-center">Rp100.000,-</td>
-                            <td class="text-center">3</td>
-                            <td class="text-center">Rp100.000,-</td>
-                          </tr>
-                          <tr>
-                            <td colspan="3"><strong>Total</strong></td>
-                            <td class="text-center"><strong>Rp100.000,-</strong></td>
-                            <td></td>
-                          </tr>
-                        </tbody>
-                    </table>
+                    <div class="form-group">
+                        <label for="">Transaksi</label>
+                        <input type="text" class="form-control" value="01234557" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Dari Rekening a/n</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Sebesar</label>
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Catatan</label>
+                        <textarea name="description" id="" cols="30" rows="5" class="form-control"></textarea>
+                    </div>
+                    <div class="form-grou">
+                        <label for="">Bukti Transfer</label><br>
+                        <input type="file" name="image" id="">
+                    </div>
                 </div>
                 <div class="card-footer">
-                    <a href="/orders-confirm.html" class="btn btn-success">Konfirmasi Pembayaran</a>
+                    <button type="submit" class="btn btn-success">Konfirmasi Pembayaran</button>
                 </div>
+            </form>
             </div>
         </div>
     </div>
