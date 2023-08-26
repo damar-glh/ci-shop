@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.115.4">
-    <title>CIShop - Codeigniter E-commerce</title>
+    <title>Admin Users - Codeigniter E-commerce</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-fixed/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
@@ -43,7 +43,7 @@
     </svg>
 
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-      <button class="btn btn-primary py-2 dropdown-toggle d-flex align-items-center"
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
               id="bd-theme"
               type="button"
               aria-expanded="false"
@@ -80,7 +80,7 @@
     
  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
   <div class="container">
-    <a class="navbar-brand" href="/index.html">CIShop</a>
+    <a class="navbar-brand" href="#">CIShop</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -97,7 +97,6 @@
               <li><a class="dropdown-item" href="/admin-category.html">Category</a></li>
               <li><a class="dropdown-item" href="/admin-product.html">Product</a></li>
               <li><a class="dropdown-item" href="/admin-order.html">Order</a></li>
-              <li><a class="dropdown-item" href="/admin-users.html">Pengguna</a></li>
             </ul>
           </li>
       </ul>
@@ -122,158 +121,69 @@
             </ul>
         </li>
     </ul>
-    </div> 
+    </div>
   </div>
-</nav>
+ </nav>
 
-<main role="main" class="container">
-  <div class="row">
-    <div class="col-md-9">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card mb-3">
-              <div class="card-body">
-                Kategori: <strong>Semua Kategori</strong>
-                <span class="float-end">
-                  Urutkan harga: <a href="#" class="badge text-bg-primary text-decoration-none">Termurah</a> | <a href="#" class="badge text-bg-primary text-decoration-none">Termahal</a>
-                </span>
+ <main class="container" role="main">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <div class="card">
+                <div class="card-header">
+                  <span>Pengguna</span>
+                  <a href="/admin-users-form.html" class="btn btn-sm text-bg-secondary">Tambah</a>
+                  <div class="float-end">
+                    <form action="#">
+                        <div class="input-group">
+                            <input type="text" name="" id="" class="form-control form-control-sm text-center" placeholder="Cari">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-secondary btn-sm">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                                <a href="#" class="btn btn-secondary btn-sm">
+                                    <i class="fas fa-eraser"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Pengguna</th>
+                                <th scope="col">E-mail</th>
+                                <th scope="col">Role</th>
+                                <th scope="col">Status</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <p>
+                                        <img src="https://placeholder.co/70x70" alt=""> Admin
+                                    </p>
+                                </td>
+                                <td>admin67@gmail.com</td>
+                                <td>Admin</td>
+                                <td>Aktif</td>
+                                <td>
+                                    <form action="#">
+                                        k
+                                    </form>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
               </div>
-            </div>
-          </div>
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card mb-3">
-              <img src="http://placehold.co/100x70" alt="" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Product Title</h5>
-                <p class="card-text"><strong>Rp100.000</strong></p>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#" class="badge text-bg-primary text-decoration-none"><i class="fas fa-tags"> Category</i></a>
-              </div>
-              <div class="card-footer">
-                <form action="">
-                  <div class="input-group">
-                    <input type="number" class="form-control">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary">Add to Cart</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card mb-3">
-              <img src="http://placehold.co/100x70" alt="" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Product Title</h5>
-                <p class="card-text"><strong>Rp100.000</strong></p>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#" class="badge text-bg-primary text-decoration-none"><i class="fas fa-tags"> Category</i></a>
-              </div>
-              <div class="card-footer">
-                <form action="">
-                  <div class="input-group">
-                    <input type="number" class="form-control">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary">Add to Cart</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card mb-3">
-              <img src="http://placehold.co/100x70" alt="" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Product Title</h5>
-                <p class="card-text"><strong>Rp100.000</strong></p>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#" class="badge text-bg-primary text-decoration-none"><i class="fas fa-tags"> Category</i></a>
-              </div>
-              <div class="card-footer">
-                <form action="">
-                  <div class="input-group">
-                    <input type="number" class="form-control">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary">Add to Cart</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card mb-3">
-              <img src="http://placehold.co/100x70" alt="" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Product Title</h5>
-                <p class="card-text"><strong>Rp100.000</strong></p>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#" class="badge text-bg-primary text-decoration-none"><i class="fas fa-tags"> Category</i></a>
-              </div>
-              <div class="card-footer">
-                <form action="">
-                  <div class="input-group">
-                    <input type="number" class="form-control">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary">Add to Cart</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <nav aria-label="Page navigation example">
-          <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-        </nav>
     </div>
-    <div class="col-md-3">
-      <div class="row">
-          <div class="col-md-12">
-            <div class="card mb-3">
-              <div class="card-header">
-                Pencarian
-              </div>
-              <div class="card-body">
-                <form action="">
-                  <div class="input-group">
-                    <input type="text" class="form-control">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary">Cari</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="card mb-3">
-            <div class="card-header">
-              Kategori
-            </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Semua Kategori</li>
-                <li class="list-group-item">Kategori 1</li>
-                <li class="list-group-item">Kategori 2</li>
-              </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</main>
+ </main>
     <script src="/assets/libs/jquery/code.jquery.com_jquery-3.7.0.min.js"></script>
     <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 
